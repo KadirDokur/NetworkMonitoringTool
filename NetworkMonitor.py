@@ -21,7 +21,7 @@ while True:
         status = "KESİNTİ"
 
     if status != last_status:
-        with open(log_path, "a") as f:
+        with open(log_path, "w") as f:
             f.write(f"{now} - {status}\n")
         print(f"{now} - {status}")
 
